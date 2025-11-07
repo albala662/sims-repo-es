@@ -12,10 +12,24 @@ header {
     padding: 10px 0;
 }
 
+h1{
+    text-align: center;
+}
+
 .navi{
     width: 90%;
     max-width: 1200px;
     margin: auto;
+}
+
+.burguir{
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: 15px;
 }
 
 .menu{
@@ -217,13 +231,46 @@ footer a:hover{
 @media (max-width: 768px){
     .menu{
     flex-direction: column;
+    display: none;
+    width: 100%
+    }
+
+    .menu li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu.active{
+        display:flex;
     }
 
     .lista-submenu, .lista-submenu ul{
         position: static;
     }
+
+    .burguir{
+        display: block;
+    }
+
+    main > div{
+        width: 100%;
+    }
+
+    button.prev, button.next{
+        font-size:1.5rem;
+        padding: 8px;
+    }
+
+    .puntitos span{
+        width: 10px;
+        height: 10px;
+    }
     
     aside{
         flex-direction: column;
+    }
+
+    .actualizaciones, aside{
+        width: 95%;
     }
 }

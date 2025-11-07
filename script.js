@@ -1,3 +1,12 @@
+////////////HAMBURGUESA////////////
+const burguer = document.querySelector(".burguir");
+const menu = document.querySelector(".menu");
+
+if (burguer && menu){
+    burguer.addEventListener("click",()=>{
+        menu.classList.toggle("active");
+    })
+}
 //CARRUSEL
 const carruselCont = document.querySelector("main>div");
 const images = carruselCont.querySelectorAll("img");
