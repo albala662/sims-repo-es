@@ -10,10 +10,10 @@
 <body>
     <header>
         <nav class="navi">
-            <button class="burguir" aria-label="Abrir menú">&#9776;</button>
+            <button class="burguir">&#9776;</button>
             <ul class="menu">
                 <li><a href="index.html">Inicio</a></li>
-                <li class="submenu"><a href="servicios.html">Entregas</a></li>
+                <li class="submenu"><a href="servicios.html">Entregas</a>
                     <ul class="lista-submenu">
                         <li><a href="sims1.html">Sims 1</a>
                             <ul>
@@ -44,6 +44,7 @@
                             </ul>
                         </li>
                     </ul>
+                </li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
@@ -52,16 +53,14 @@
     <main> 
         <h1>Repositorio Sims ES</h1>
         <div> <!--Carrusel con enlace a cada una de las entregas-->
-            <img src="sims1.webp" class="active">            
-            <img src="sims2.png" class="active">    
-            <img src="sims3.jpg" class="active">
-            <img src="sims4.jpg" class="active">
+            <img src="sims1.webp" class="active" alt="Captura de pantalla de los Sims 1">            
+            <img src="sims2.png" class="active" alt="Imagen promocional de los Sims 2">    
+            <img src="sims3.jpg" class="active" alt="Imagen promocional de los Sims 3">
+            <img src="sims4.jpg" class="active" alt="Imagen promocional de los Sims 4">
             <button class="prev">&#10094;</button>
             <button class="next">&#10095;</button>
             <div class="puntitos"></div>  <!--Puntitos de seleccionar la imagen-->
         </div>
-
-        </section>
         <section class="actualizaciones">
             <h2>Últimas actualizaciones</h2>
             <div class="update">
@@ -90,6 +89,24 @@
         <p><a href="pol-priv.html">Política de Privacidad</a></p>
         <p>©2025. Todos los derechos reservados.</p>
     </footer>
+    <button id="up">↑</button>
+    <script>
+    const arriba = document.getElementById("up");
+
+    window.addEventListener("scroll", ()=>{
+        if(window.scrollY>100){
+            arriba.style.display="flex";
+        } else{
+            arriba.style.display="none";
+        }
+    })
+    arriba.addEventListener("click", ()=>{
+        window.scrollTo({
+            top:0,
+            behavior: "smooth"        
+        })
+    })
+    </script>
 <script src="script.js"></script>
 </body>
 </html>

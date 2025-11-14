@@ -10,10 +10,10 @@
 <body>
     <header>
         <nav class="navi">
-            <button class="burguir" aria-label="Abrir menú">&#9776;</button>
+            <button class="burguir">&#9776;</button>
             <ul class="menu">
                 <li><a href="index.html">Inicio</a></li>
-                <li class="submenu"><a href="servicios.html">Entregas</a></li>
+                <li class="submenu"><a href="servicios.html">Entregas</a>
                     <ul class="lista-submenu">
                         <li><a href="sims1.html">Sims 1</a>
                             <ul>
@@ -44,36 +44,36 @@
                             </ul>
                         </li>
                     </ul>
+                </li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Sims 4</h1>
-        <div>
-            <img src="#">
+        <div class="hero" style="--img:url('sims4.jpg')">
+            <h1>Sims 4</h1>
         </div>
         <section>
             <h2>Mods</h2>
             <div>
-                <img src="#">
+                <img src="s4mods.webp" alt="Captura de pantalla de los Sims 4. Muestra un menú del mod MCCC, de DeaderPool.">
             </div>
-            <p><a href="#">Ir a Mods</a></p>
+            <p><a href="mods-sims4.html" class="boton">Ir a Mods</a></p>
         </section>
         <section>
             <h2>Contenido Personalizado</h2>
             <div>
-                <img src="#">
+                <img src="s4cc.jpg" alt="Sims con atuendos CC">
             </div>
-            <p><a href="#">Ir a Contenido Personalizado</a></p>
+            <p><a href="cc-sims4.html" class="boton">Ir a Contenido Personalizado</a></p>
         </section>
         <section>
             <h2>Reemplazos</h2>
             <div>
-                <img src="#">
+                <img src="s4defrep.png" alt="Sims con un reemplazo de piel">
             </div>
-            <p><a href="#">Ir a Reemplazos</a></p>
+            <p><a href="defaults-sims4.html" class="boton">Ir a Reemplazos</a></p>
         </section>
         <section>
             <h2>Entradas de Blog sobre Sims 4</h2>
@@ -90,11 +90,13 @@
             <h2>Posts en redes sobre Sims 4</h2>
             <a></a> <!--Añadir un widget aquí-->
         </section>
+        <button id="up">↑</button>
     </main>
     <footer>
         <p><a href="avisolegal.html">Aviso legal</a></p>
         <p><a href="pol-priv.html">Política de Privacidad</a></p>
         <p>©2025. Todos los derechos reservados.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

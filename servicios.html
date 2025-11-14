@@ -10,10 +10,10 @@
 <body>
     <header>
         <nav class="navi">
-            <button class="burguir" aria-label="Abrir menú">&#9776;</button>
+            <button class="burguir">&#9776;</button>
             <ul class="menu">
                 <li><a href="index.html">Inicio</a></li>
-                <li class="submenu"><a href="servicios.html">Entregas</a></li>
+                <li class="submenu"><a href="servicios.html">Entregas</a>
                     <ul class="lista-submenu">
                         <li><a href="sims1.html">Sims 1</a>
                             <ul>
@@ -44,6 +44,7 @@
                             </ul>
                         </li>
                     </ul>
+                </li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
@@ -51,31 +52,64 @@
     </header>
     <main>
         <h1>Entregas</h1>
-        <section>
+        <input type="text" id="buscador" placeholder="Buscar...">
+        <section class="entrega">
             <h2>Sims 4</h2>
-        <div><img src="#"></div>
-        <p><a href="sims4.html">Ir a Sims 4</a></p>
+        <div class="banner"><img src="sims4.jpg" alt="Imagen promocional de los Sims 4"></div>
+        <p><a href="sims4.html" class="boton">Ir a Sims 4</a></p>
         </section>
-        <section>
+        <section class="entrega s3">
             <h2>Sims 3</h2>
-        <div><img src="#"></div>
-        <p><a href="sims3.html">Ir a Sims 3</a></p>
+        <div class="banner"><img src="sims3.jpg" alt="Imagen promocional de los Sims 3"></div>
+        <p><a href="sims3.html" class="boton">Ir a Sims 3</a></p>
         </section>
-        <section>
+        <section class="entrega s2">
             <h2>Sims 2</h2>
-        <div><img src="#"></div>
-        <p><a href="sims2.html">Ir a Sims 2</a></p>
+        <div class="banner"><img src="sims2.png" alt="Imagen promocional de los Sims 2"></div>
+        <p><a href="sims2.html" class="boton">Ir a Sims 2</a></p>
         </section>
-        <section>
+        <section class="entrega">
             <h2>Sims 1</h2>
-        <div><img src="#"></div>
-        <p><a href="sims1.html">Ir a Sims 1</a></p>
+        <div class="banner"><img src="sims1.webp" alt="Captura de pantalla de los Sims 1"></div>
+        <p><a href="sims1.html" class="boton">Ir a Sims 1</a></p>
         </section>
+        <button id="up">↑</button>
     </main>
     <footer>
         <p><a href="avisolegal.html">Aviso legal</a></p>
         <p><a href="pol-priv.html">Política de Privacidad</a></p>
         <p>©2025. Todos los derechos reservados.</p>
     </footer>
+    <script>
+        ///////////BÚSQUEDA//////////
+        const buscador= document.getElementById("buscador");
+        const seccion = document.querySelectorAll("main section");
+
+        buscador.addEventListener("input", e =>{
+        const texto = e.target.value.toLowerCase();
+        secciones.forEach(sec =>{
+            const titulo = sec.querySelector("h2").textContent.toLowerCase();
+            sec.style.display = titulo.includes(texto) ? "block":"none";
+        })
+    })
+        ////////SCROLL Y VOLVER ARRIBA///////////
+        document.addEventListener("DOMContentLoaded", ()=>{
+        const arriba = document.getElementById("up");
+
+        window.addEventListener("scroll", ()=>{
+            if(window.scrollY>100){
+                arriba.style.display="flex";
+            } else{
+                arriba.style.display="none";
+            }
+        })
+        arriba.addEventListener("click", ()=>{
+            window.scrollTo({
+                top:0,
+                behavior: "smooth"        
+         })
+        })
+    })
+    </script>
 </body>
 </html>

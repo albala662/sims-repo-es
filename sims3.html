@@ -10,10 +10,10 @@
 <body>
     <header>
         <nav class="navi">
-            <button class="burguir" aria-label="Abrir menú">&#9776;</button>
+            <button class="burguir">&#9776;</button>
             <ul class="menu">
                 <li><a href="index.html">Inicio</a></li>
-                <li class="submenu"><a href="servicios.html">Entregas</a></li>
+                <li class="submenu"><a href="servicios.html">Entregas</a>
                     <ul class="lista-submenu">
                         <li><a href="sims1.html">Sims 1</a>
                             <ul>
@@ -44,36 +44,36 @@
                             </ul>
                         </li>
                     </ul>
+                </li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
         <main>
-        <h1>Sims 3</h1>
-        <div>
-            <img src="#">
+        <div class="hero" style="--img:url('sims3.jpg')">
+            <h1>Sims 3</h1>
         </div>
         <section>
             <h2>Mods</h2>
             <div>
-                <img src="#">
+                <img src="s3mods.jpg" alt="Captura de pantalla de los Sims 3. Algunos de los iconos mostrados son consecuencia del mod NRAAS.">
             </div>
-            <p><a href="#">Ir a Mods</a></p>
+            <p><a href="mods-sims3.html" class="boton">Ir a Mods</a></p>
         </section>
         <section>
             <h2>Contenido Personalizado</h2>
             <div>
-                <img src="#">
+                <img src="s3cc.avif" alt="Captura de pantalla de los Sims 3 en modo Crear Un Sim. El atuendo y el peinado son CC.">
             </div>
-            <p><a href="#">Ir a Contenido Personalizado</a></p>
+            <p><a href="cc-sims3.html" class="boton">Ir a Contenido Personalizado</a></p>
         </section>
         <section>
             <h2>Reemplazos</h2>
             <div>
-                <img src="#">
+                <img src="s3defrep.webp" alt="Lanzador de los Sims 3. Su apariencia está reemplazada.">
             </div>
-            <p><a href="#">Ir a Reemplazos</a></p>
+            <p><a href="defaults-sims3.html" class="boton">Ir a Reemplazos</a></p>
         </section>
         <section>
             <h2>Entradas de Blog sobre Sims 4</h2>
@@ -90,11 +90,13 @@
             <h2>Posts en redes sobre Sims 4</h2>
             <a></a> <!--Añadir un widget aquí-->
         </section>
+        <button id="up">↑</button>
     </main>
     <footer>
         <p><a href="avisolegal.html">Aviso legal</a></p>
         <p><a href="pol-priv.html">Política de Privacidad</a></p>
         <p>©2025. Todos los derechos reservados.</p>
     </footer>
+    <script src="script.js"></script>
     </body>
 </html>
