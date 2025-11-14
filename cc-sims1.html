@@ -85,6 +85,23 @@
             <p>Breve descripción</p>
         </article>
         <button id="up">↑</button>
+        <script>
+            const arriba = document.getElementById("up");
+
+    window.addEventListener("scroll", ()=>{
+        if(window.scrollY>100){
+            arriba.style.display="flex";
+        } else{
+            arriba.style.display="none";
+        }
+    })
+    arriba.addEventListener("click", ()=>{
+        window.scrollTo({
+            top:0,
+            behavior: "smooth"        
+        })
+    })
+        </script>
     </main>
     <footer>
         <p><a href="avisolegal.html">Aviso legal</a></p>
