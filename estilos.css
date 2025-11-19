@@ -461,6 +461,12 @@ article .boton{
 article + article {
     margin-top: 2.5rem;
 }
+.img-grande{
+    width: 70%;
+    max-width: 350px;
+    margin: 0 auto;
+    display: block;
+}
 /*///////////DISEÑO RESPONSIVE////////////*/
 @media (max-width: 768px) {
     .menu {
