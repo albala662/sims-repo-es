@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <title>Contacto | Repositorio Sims ES</title>
     <meta charset="UTF-8">
@@ -10,15 +11,16 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WP12571ZFG"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-WP12571ZFG');
+    gtag('config', 'G-WP12571ZFG');
 </script>
+
 <body>
     <header>
-       <nav class="navi">
+        <nav class="navi">
             <button class="burguir">&#9776;</button>
             <ul class="menu">
                 <li><a href="index.html">Inicio</a></li>
@@ -64,7 +66,14 @@
         <section>
             <h2>Sobre mí</h2>
             <!--<img src="#">-->
-            <p>--Bio--</p>
+            <p>¡Hola! Soy Alba o Benzene, fanática de los Sims desde pequeñita, y especialmente fiel jugadora de los
+                Sims 2. Desde que descubrí por casualidad el extenso mundo de los mods y el CC, me he dedicado a buscar
+                y experimentar lo posible con ellos (incluso tengo como proyecto personal aprender a hacer mis propio
+                cc). Mi objetivo es ofrecer un recurso a la comunidad Sims hispanohablante, ya que la mayoría de
+                espacios son angloparlantes, y también estaría bien un lugar donde compartir nuestros recursos,
+                tutoriales, etc. en nuestra lengua. Si tienes alguna sugeriencia para esta página, o algún fallo o
+                encontrais algún enlace o imagen caído, hacédmelo saber en el formulario de abajo. ¡Muchas gracias! 
+            </p>
         </section>
         <section>
             <h2>Formulario de contacto</h2>
@@ -76,7 +85,7 @@
                 <input type="email" id="correo" name="correo" required>
                 <br><br>
                 <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
-                <button class= "boton" type="submit">Enviar</button>
+                <button class="boton" type="submit">Enviar</button>
             </form>
         </section>
         <!--<section>
@@ -86,24 +95,24 @@
             <p><a href="#">Red 3</a></p>
             <p><a href="#">Red 4</a></p>
         </section>-->
-        <button id="up">↑</button>  
+        <button id="up">↑</button>
         <script>
-        const arriba = document.getElementById("up");
+            const arriba = document.getElementById("up");
 
-        window.addEventListener("scroll", ()=>{
-            if(window.scrollY>100){
-                arriba.style.display="flex";
-            } else{
-                arriba.style.display="none";
-            }
-        })
-    arriba.addEventListener("click", ()=>{
-        window.scrollTo({
-            top:0,
-            behavior: "smooth"        
-        })
-    })   
-        </script>  
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 100) {
+                    arriba.style.display = "flex";
+                } else {
+                    arriba.style.display = "none";
+                }
+            })
+            arriba.addEventListener("click", () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                })
+            })   
+        </script>
     </main>
     <footer>
         <p><a href="avisolegal.html">Aviso legal</a></p>
@@ -112,4 +121,5 @@
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
