@@ -19,6 +19,11 @@ h1 {
     text-align: center;
 }
 
+.centro{
+    font-size: 0.8rem;
+    text-align: center;
+}
+
 .navi {
     width: 90%;
     max-width: 1200px;
@@ -415,13 +420,20 @@ footer a:hover {
     transform: translateY(-50%)
 }
 /*////////FORMULARIO///////*/
+form{
+    background-color: #FEFFBE;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
 form input, form textarea{
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border-radius: 8px;
     border: 1px solid #39B86E;
     margin-top: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
 }
 /*////////////MENÚ SORT//////////////*/
 .sort-by{
