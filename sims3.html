@@ -19,10 +19,10 @@
 <body>
     <header>
         <nav class="navi" aria-label="Navegación principal">
-            <button class="burguir">&#9776;</button>
+            <button class="burguir" aria-label="Abrir menú">&#9776;</button>
             <ul class="menu">
                 <li><a href="index.html">Inicio</a></li>
-                <li class="submenu"><a href="servicios.html">Entregas</a>
+                <li class="submenu"><a href="servicios.html" aria-haspopup="true" aria-expanded="false">Entregas</a>
                     <ul class="lista-submenu">
                         <li><a href="sims1.html">Sims 1</a>
                             <ul>
@@ -60,21 +60,21 @@
         </nav>
     </header>
         <main>
-        <div class="hero" style="--img:url('sims3.jpg')">
+        <div class="hero" style="--img:url('sims3.webp')">
             <h1>Sims 3</h1>
         </div>
         <input type="text" id="buscador" placeholder="Buscar...">
         <section>
             <h2>Mods</h2>
             <div>
-                <img src="s3mods.jpg" loading="lazy" alt="Captura de pantalla de los Sims 3. Algunos de los iconos mostrados son consecuencia del mod NRAAS.">
+                <img src="s3mods.webp" loading="lazy" alt="Captura de pantalla de los Sims 3. Algunos de los iconos mostrados son consecuencia del mod NRAAS.">
             </div>
             <p><a href="mods-sims3.html" class="boton">Ir a Mods</a></p>
         </section>
         <section>
             <h2>Contenido Personalizado</h2>
             <div>
-                <img src="s3cc.avif" loading="lazy" alt="Captura de pantalla de los Sims 3 en modo Crear Un Sim. El atuendo y el peinado son CC.">
+                <img src="s3cc.webp" loading="lazy" alt="Captura de pantalla de los Sims 3 en modo Crear Un Sim. El atuendo y el peinado son CC.">
             </div>
             <p><a href="cc-sims3.html" class="boton">Ir a Contenido Personalizado</a></p>
         </section>
@@ -86,10 +86,11 @@
             <p><a href="defaults-sims3.html" class="boton">Ir a Reemplazos</a></p>
         </section>
         <section>
-            <h2>Entradas de Blog sobre Sims 4</h2>
+            <h2>Entradas de Blog sobre Sims 3</h2>
             <div>
-                <h3>Título de la entrada</h3>
-                <p>Descripción de la entrada</p>
+                <h3>Mejorar la Jugabilidad de los Sims 3 con Mods y Contenido Personalizado</h3>
+        <p>Lista de Mods y CC para los Sims 3 que pueden mejorar tu calidad de juego y modernizarlo tanto estéticamente como en terminos de usabilidad.</p>
+        <a href="post.html" class="boton">Ir al sitio</a>
             </div>
             <div>
                 <h3>Título de la entrada</h3>
@@ -97,7 +98,7 @@
             </div>
         </section>
         <section>
-            <h2>Posts en redes sobre Sims 4</h2>
+            <h2>Posts en redes sobre Sims 3</h2>
             <a></a> <!--Añadir un widget aquí-->
         </section>
         <button id="up">↑</button>

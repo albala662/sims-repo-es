@@ -81,10 +81,11 @@ h1 {
     font-weight: 500;
     padding: 10px 15px;
     display: block;
-    transition: all 0.3s ease;
+    transition: background 0.3s ease;
+    border: 2px solid transparent;
 }
 
-.menu a:hover {
+.menu a:hover, .menu a:focus {
     background-color: var(--sims-amarillo);
     border-radius: 4px;
 }
@@ -99,7 +100,7 @@ h1 {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #EBD494;
+    background-color: var(--sims-ocre);
     min-width: 200px;
     display: none;
     z-index: 100;

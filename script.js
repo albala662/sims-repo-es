@@ -7,6 +7,7 @@ const menu = document.querySelector(".menu");
 if (burguer && menu){
     burguer.addEventListener("click",()=>{
         menu.classList.toggle("active");
+        burguer.setAttribute("aria-expanded", menu.classList.contains("active"));
     });
 }
 
@@ -24,7 +25,7 @@ if (carruselCont) {
     function mostrarImagen(index){
         const puntos = puntitosCont.querySelectorAll("span");
         puntos.forEach((p, i)=>p.classList.toggle("active", i === index));
-        
+
         images.forEach((img, i)=> img.style.display = i === index ? "block" : "none");
     }
 
@@ -118,9 +119,21 @@ document.querySelectorAll(".submenu > a").forEach(link=>{
     link.addEventListener("click", e =>{
         if(window.innerWidth <=768){
             e.preventDefault();
-            link.parentElement.classList.toggle("open");
+            const parent =link.parentElement;
+            parent.classList.toggle("open");
+            const expanded =parent.classList.contains("open");
+            link.setAttribute("aria-expanded", expanded);
         }
     });
+    link.addEventListener("keydown", e=>{
+        if (e.key === "Enter"||e.key ===""){
+            e.preventDefault();
+            const parent = link.parentElement;
+            parent.classList.toggle("open");
+            const expanded = parent.classList.contains("open");
+            link.setAttribute("aria-expanded", expanded);
+        }
+    })
 });
 
 ////////////// ÚLTIMA ACTUALIZACIÓN ////////////
