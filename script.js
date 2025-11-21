@@ -114,6 +114,28 @@ if (correo){
     });
 }
 
+emailjs.init("ZgwrxO_XTo5_zb2dn");
+
+const form=document.getElementById("contacto-form");
+const status=document.getElementById("status");
+
+form.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const templateParams={
+        nombre: form.nombre.value,
+        correo: form.correo.value,
+        mensaje: form.mensaje.value,
+    };
+    emailjs.send("sims-repo-es", "template_8jgu24d", templateParams)
+    .then(function(response){
+        status.innerHTML = "<p style='color:green'>Mensaje enviado correctamente</p>";
+        form.reset();
+    }, function(error){
+        status.innerHTML = "<p style='color:red'>Hubo un error al enviar el mensaje.</p>";
+    }) 
+})
+
 //////////////ACCESIBILIDAD SUBMENÚ////////
 document.querySelectorAll(".submenu > a").forEach(link=>{
     link.addEventListener("click", e =>{
