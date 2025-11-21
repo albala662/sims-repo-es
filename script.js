@@ -22,6 +22,9 @@ if (carruselCont) {
     let intervalo;
 
     function mostrarImagen(index){
+        const puntos = puntitosCont.querySelectorAll("span");
+        puntos.forEach((p, i)=>p.classList.toggle("active", i === index));
+        
         images.forEach((img, i)=> img.style.display = i === index ? "block" : "none");
     }
 

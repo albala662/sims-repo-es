@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <title>Inicio |Repositorio Sims ES</title>
     <meta charset="UTF-8">
@@ -11,15 +12,16 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WP12571ZFG"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-WP12571ZFG');
+    gtag('config', 'G-WP12571ZFG');
 </script>
+
 <body>
     <header>
-        <nav class="navi">
+        <nav class="navi" aria-label="Navegación principal">
             <button class="burguir">&#9776;</button>
             <ul class="menu">
                 <li><a href="index.html">Inicio</a></li>
@@ -60,35 +62,40 @@
             </ul>
         </nav>
     </header>
-    <main> 
+    <main>
         <h1>Repositorio Sims ES</h1>
         <h2 class="centro">SITIO BAJO CONSTRUCCIÓN</h2>
         <div> <!--Carrusel con enlace a cada una de las entregas-->
-            <img src="sims1.webp" loading="lazy" class="active" alt="Captura de pantalla de los Sims 1">            
-            <img src="sims2.png" loading="lazy" class="active" alt="Imagen promocional de los Sims 2">    
+            <img src="sims1.webp" loading="lazy" class="active" alt="Captura de pantalla de los Sims 1">
+            <img src="sims2.png" loading="lazy" class="active" alt="Imagen promocional de los Sims 2">
             <img src="sims3.jpg" loading="lazy" class="active" alt="Imagen promocional de los Sims 3">
             <img src="sims4.jpg" loading="lazy" class="active" alt="Imagen promocional de los Sims 4">
-            <button class="prev">&#10094;</button>
-            <button class="next">&#10095;</button>
-            <div class="puntitos"></div>  <!--Puntitos de seleccionar la imagen-->
+            <button class="prev" aria-label="Imagen previa">&#10094;</button>
+            <button class="next" aria-label="Imagen siguiente">&#10095;</button>
+            <div class="puntitos"></div> <!--Puntitos de seleccionar la imagen-->
         </div>
         <section class="actualizaciones">
             <h2>Últimas actualizaciones</h2>
-             <input type="text" id="buscador" placeholder="Buscar...">
+            <input type="text" id="buscador" placeholder="Buscar...">
             <div class="update">
-                <h3>Título</h3>
-                <p>Breve descripción</p>
-                <a href="#"></a>
+                <h3>Reemplazo de ojos "Plasticity" para Sims 4</h3>
+                <p>Reemplazo de ojos predeterminados de EA por unos más realistas. Solo se puede tener un reemplazo de
+                    ojos a la vez en el juego. (21/11/25) </p>
+                <a href="defaults-sims4.html" class="boton">Ir al post</a>
             </div>
             <div class="update">
-                <h3>Título</h3>
-                <p>Breve descripción</p>
-                <a href="#"></a>
+                <h3>Mejora la Jugabilidad de los Sims 3 con Mods</h3>
+                <p>Los mods de jugabilidad pueden cambiar por completo la experiencia del juego, añadiendo nuevas
+                    interacciones, mecánicas y características. Aquí algunos esenciales. (20/11/25)</p>
+                <a href="post.html" class="boton">Ir al post</a>
             </div>
             <div class="update">
-                <h3>Título</h3>
-                <p>Breve descripción</p>
-                <a href="#"></a>
+                <h3>Tatuajes Coquette Para Sims 4</h3>
+                <p>Tatuajes con estética coquette para Sims adolescentes a ancianas. Se encuentra en la sección de
+                    tatuajes
+                    para brazo derecho. Este contenido es compatible con el juego base. Su creador original es The Kims
+                    4. (16/11/25)</p>
+                <a href="cc-sims4.html" class="boton">Ir al post</a>
             </div>
         </section>
         <aside>
@@ -103,22 +110,23 @@
     </footer>
     <button id="up">↑</button>
     <script>
-    const arriba = document.getElementById("up");
+        const arriba = document.getElementById("up");
 
-    window.addEventListener("scroll", ()=>{
-        if(window.scrollY>100){
-            arriba.style.display="flex";
-        } else{
-            arriba.style.display="none";
-        }
-    })
-    arriba.addEventListener("click", ()=>{
-        window.scrollTo({
-            top:0,
-            behavior: "smooth"        
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 100) {
+                arriba.style.display = "flex";
+            } else {
+                arriba.style.display = "none";
+            }
         })
-    })
+        arriba.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            })
+        })
     </script>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
