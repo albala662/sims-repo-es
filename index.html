@@ -22,7 +22,7 @@
     <header>
         <nav class="navi" aria-label="Navegación principal">
             <button class="burguir" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal">&#9776;</button>
-            <ul id=menu-principal class="menu" hidden>
+            <ul id=menu-principal class="menu">
                 <li><a href="/sims-repo-es/">Inicio</a></li>
                 <li class="submenu"><a href="servicios.html" aria-haspopup="true" aria-expanded="false">Entregas</a>
                     <ul class="lista-submenu">
@@ -64,7 +64,7 @@
     <main>
         <h1>Repositorio Sims ES</h1>
         <h2 class="centro">SITIO BAJO CONSTRUCCIÓN</h2>
-        <div> <!--Carrusel con enlace a cada una de las entregas-->
+        <div role="region" aria-label="Carrusel de imágenes"> <!--Carrusel con enlace a cada una de las entregas-->
             <img src="sims1.webp" loading="lazy" class="active" alt="Captura de pantalla de los Sims 1">
             <img src="sims2.webp" loading="lazy" class="active" alt="Imagen promocional de los Sims 2">
             <img src="sims3.webp" loading="lazy" class="active" alt="Imagen promocional de los Sims 3">
@@ -107,7 +107,7 @@
         <p><a href="pol-priv.html">Política de Privacidad</a></p>
         <p>©2025. Todos los derechos reservados.</p>
     </footer>
-    <button id="up">↑</button>
+    <button id="up" aria-label="Subir al inicio">↑</button>
     <script>
         const arriba = document.getElementById("up");
 

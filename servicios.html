@@ -82,7 +82,7 @@
         <div class="banner"><img src="sims1.webp" loading="lazy" alt="Captura de pantalla de los Sims 1"></div>
         <p><a href="sims1.html" class="boton">Ir a Sims 1</a></p>
         </section>
-        <button id="up">↑</button>
+        <button id="up" aria-label="Subir al inicio">↑</button>
     </main>
     <footer>
         <p><a href="avisolegal.html">Aviso legal</a></p>
@@ -92,7 +92,7 @@
     <script>
         ///////////BÚSQUEDA//////////
         const buscador= document.getElementById("buscador");
-        const seccion = document.querySelectorAll("main section");
+        const secciones = document.querySelectorAll("main section");
 
         buscador.addEventListener("input", e =>{
         const texto = e.target.value.toLowerCase();

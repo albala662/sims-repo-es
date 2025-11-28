@@ -11,6 +11,7 @@ if (burguer && menu){
     });
 }
 
+
 //////////////CARRUSEL//////////////
 const carruselCont = document.querySelector("main > div");
 if (carruselCont) {
