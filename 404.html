@@ -1,25 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <title> CC Sims 1 | Repositorio Sims ES</title>
+    <title>Título de la página</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="estilos.css">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WP12571ZFG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-WP12571ZFG');
-</script>
 <body>
     <header>
-         <nav class="navi" aria-label="Navegación principal">
+        <nav class="navi" aria-label="Navegación principal">
             <button class="burguir" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal">&#9776;</button>
             <ul class="menu">
                 <li><a href="/sims-repo-es/">Inicio</a></li>
@@ -61,62 +51,17 @@
         </nav>
     </header>
     <main>
-        <h1>Contenido Personalizado para Sims 1</h1>
-        <div>
-            <a href="sims1.html" class="boton">Volver a Sims 1</a>
-        </div>
-         <input type="text" id="buscador" placeholder="Buscar...">
-        <div class="sort-by">
-            <label for="ordenar">Ordenar por:</label>
-            <select id="ordenar">
-                <option value="relevancia">Relevancia</option>
-                <option value="antiguo">Más antiguos</option>
-                <option value="nuevo">Más nuevos</option>
-            </select>
-        </div>
-        <article>
-            <h2>Skin para mujeres Sims "Cool Casual"</a></h2>
-            <img src="https://simfreaks.com/assets/img/sims/skins/bodies/female/fit/Everyday/CoolCasual/sfXCoolCasualPack_600x400.jpg" loading="lazy" alt="Colección de prendas para mujer Contenido Personalizado Sims 1">
-            <p><strong>Skins de ropa reminiscente de los 2000</strong> - ya que este CC se creó durante esa época -, <strong>disponible en pieles
-                blancas, bronceadas y morenas.</strong> Este contenido es <strong>compatible con el Juego Base</strong>(para aquellos que aún
-                jueguen la versión original). No ha sido testeado en la Legacy Collection.<br>
-                Este contenido se encuentra originalmente en la página Sim Freaks.
-                <a href="https://simfreaks.com/skins/female/fit/fem-fit-everday.php" class="boton">Ir al sitio</a>
-            </p>
-        </article>
-        <article>
-            <h2><a href="#">Título del CC</a></h2>
-            <p>Breve descripción</p>
-        </article>
-        <article>
-            <h2><a href="#">Título del CC</a></h2>
-            <p>Breve descripción</p>
-        </article>
-        <button id="up">↑</button>
-        <script>
-            const arriba = document.getElementById("up");
+        <h1>Algo salió mal...</h1>
+        <img src="404.webp" alt="404" class="404">
+        <p>Lo sentimos, la páginas que busca no existe.</p>
 
-    window.addEventListener("scroll", ()=>{
-        if(window.scrollY>100){
-            arriba.style.display="flex";
-        } else{
-            arriba.style.display="none";
-        }
-    })
-    arriba.addEventListener("click", ()=>{
-        window.scrollTo({
-            top:0,
-            behavior: "smooth"        
-        })
-    })
-        </script>
+            <a href="index.html" class="boton">Volver al inicio</a>
+            <a href="javascript:history.back()" class="boton">Regresar</a>
     </main>
     <footer>
-        <p><a href="avisolegal.html">Aviso legal</a></p>
+         <p><a href="avisolegal.html">Aviso legal</a></p>
         <p><a href="pol-priv.html">Política de Privacidad</a></p>
         <p>©2025. Todos los derechos reservados.</p>
     </footer>
-    <script src="script.js"></script>
 </body>
-
 </html>

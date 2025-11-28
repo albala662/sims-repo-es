@@ -39,6 +39,11 @@ h1 {
     text-align: center;
 }
 
+a:focus, button:focus{
+    outline: 3px solid #00c46b;
+    outline-offset: 3px;
+}
+
 .centro{
     font-size: 0.8rem;
     text-align: center;
@@ -52,12 +57,6 @@ h1 {
 
 .burguir {
     display: none;
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 2rem;
-    cursor: pointer;
-    margin-left: 15px;
 }
 
 .menu {
@@ -91,6 +90,13 @@ h1 {
 }
 
 .submenu.open > .lista-submenu{
+    display: block;
+}
+
+.submenu > button:focus, .lista-submenu > li > button:focus{
+    outline: 3px solid #00c46b;
+}
+.submenu:focus-within .lista-submenu, .lista-submenu > li:focus-within ul{
     display: block;
 }
 
@@ -516,12 +522,27 @@ article + article {
     margin: 0 auto;
     display: block;
 }
+/*////////////PAGINA 404/////////////*/
+main img[src="404.webp"]{
+    width: 180px;
+    max-width: 50%;
+    margin: 20px auto;
+    display: block;
+}
 /*///////////DISEÑO RESPONSIVE////////////*/
 @media (max-width: 768px) {
     .menu {
         flex-direction: column;
+        display: flex;
+        background: var(--sims-azul);
+        width: 100%;
+        margin: 10px 0 0 0;
+        border-radius: 10px;
+        box-shadow: var(--shadow-medium);
+    }
+
+    .menu[hidden]{
         display: none;
-        width: 100%
     }
 
     .menu li {
@@ -540,6 +561,11 @@ article + article {
 
     .burguir {
         display: block;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
     }
 
     main section{
